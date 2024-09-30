@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family:Fraunces_9pt-Black ;
+    src: url(Fraunces_9pt-Black.ttf);
+}
+@font-face {
+    font-family: Montserrat-VariableFont_wght;
+    src: url(Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Montserrat-Light;
+    src: url(Montserrat-Light.ttf);
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-family: Fraunces_9pt_Soft-Regular;
+}
+.body{    
+    padding: 30px;
+    padding-left: 40px;
+    width: 250px;
+    height: 360px;
+    background-color: white;
+    border-radius: 5px; 
+    text-align: start;
+    position: relative;
+    top: -316px;
+    left: 600px;
+    
+}
+.desktop{
+    
+    width: 250px;
+    height: 420px;
+    position: relative;
+    left: 360px;
+    top: 108px;
+    z-index: 1; 
+    border-radius: 5px;   
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.mobile{
+    display: none;
+}
+.intro{
+    font-family: Montserrat-Light;
+    font-size: 14px;
+    color: hsl(158, 36%, 37%);
+    padding-bottom: 20px;
+}
+.name{
+    font-family: Fraunces_9pt-Black;
+    font-size: 32px;
+}
+.content{
+    font-family: Montserrat-VariableFont_wght;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+}
+.price{
+    font-family: Fraunces_9pt-Black;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+.discount{
+    font-family: Montserrat-VariableFont_wght;
+    text-decoration: line-through;
+    position: relative;
+    font-size: 18px;
+    left: 150px;
+    top: -30px;
+}
+.hover{
+    
+    font-family: Montserrat -VariableFont_wght;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    height: 30px;
+     
+}
+.hover:hover{
+    background-color: hsl(212, 21%, 14%);
+    color: hsl(30, 38%, 92%);
+
+}
+.icon{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: -30px;
+    left: 40px;
+}
+.attribution{
+    position: relative;
+    top: -300px;
+    left: 450px;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (max-width: 600px) {
+     body{                  
+        background-color:  hsl(228, 12%, 48%);    
+        }
+
+     .desktop{
+        display: none;             
+     }
+
+     .mobile{         
+        display: unset;
+        position: relative;        
+        left: 20px;
+        top: 30px;
+        width: 350px;
+        height: 250px;        
+        border-radius: 6px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding-left: 0px;
+    }
+    .body{         
+        padding-left: 0px;         
+        z-index: 1;         
+        position: relative;
+        left: 20px;
+        top: 1px;
+        width: 310px;
+        height: 330px;          
+        border-radius: 6px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;  
+        padding: 20px;    
+     }
+     .intro{
+        padding-bottom: 10px;
+        color: hsl(212, 21%, 14%);         
+     }
+      
+     .content{
+        font-size: 16px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    
+     .discount{ 
+        width: 100px; 
+    }
+     .attribution{  
+        width: 300px;
+        font-size: 10px;
+        position: relative;
+        left: 50px;
+        top: 10px;
+     }
+
+
+}
+
+ 
